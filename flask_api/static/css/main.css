@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin:0;
+  padding:0;
+  background-color: #00536b;
+  color:#fff
+}
+
+div.back{
+    margin-top: 50px;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+    background-color: rgb(255, 255, 255);
+    padding:30px
+}
+div.up{
+    width:100%;
+    height:35px;
+    padding:5;
+    margin-bottom:20px ;
+    color:#00536b
+}
+div.up p{
+    font-size: 20px;
+    font-weight: 700;
+}
+div.down{
+    width:100%;
+    height:80px;
+    padding: 10;
+    margin:0;
+    font-size: 17px;
+    font-weight: 600;
+}
+div.predict{
+  padding:50px;
+  background-color: rgb(198, 230, 238);
+  min-height:400px
+}

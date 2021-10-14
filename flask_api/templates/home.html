@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block body%}
+<div class="container">
+   <h1 class="text-center ">Potato Classify</h1>
+   <hr style="width:150;height:3px;px;color='#bbb';margin:auto">
+</div>
+   <div class="back  text-center">
+      <div class="container">
+            <form action="/" method="post" enctype="multipart/form-data">
+            <div class="form-group ">
+                     <input type="file" name="imagefile">
+                     <input type="submit" value="Predict" name="UPLOAD" class="btn btn-warning ">
+            </div>
+            </form>
+       </div>
+   </div>
+   <div class="predict">
+      <div class="container">
+            <div class="row">
+               <div class="col-md-8 offset-md-2">
+                  <div class="text-center predic">
+                     <div class="up">
+                     {% if classname %}
+                        <p>Prediction</p>
+                        <hr style="width:70;height:1.5px;margin:auto;background-color:#fff">
+                     </div>
+                     <div class="down">
+                        <p> The potato is : <span style="font-size:18px;color:#34495E;font-weight: 700;">{{classname}}</span></p>
+                        <p> Confidense : <span style="font-size:18px;color:#34495E;font-weight: 700;">{{accuracy}}</span></p>
+                     </div>
+                  </div>
+             </div>
+         </div>
+             {% endif %}
+      </div>
+  </div>
+      {% endblock%}
